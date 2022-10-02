@@ -1,0 +1,18 @@
+- Used Linode as a VM
+- sh -c "$(curl -sSfL https://release.solana.com/v1.14.3/install)"
+- solana-keygen new (create wallet in linux)
+- curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh (install rust coz sol uses rust)
+- sudo apt-install libudev-dev
+- sudo apt install libssl-dev pkg-config
+- sudo apt install build-essential
+- cargo install spl-token-cli
+
+add: 
+
+- spl-token create-account
+acc: 
+
+- spl-token mint add 100000 acc
+
+- spl-token accounts
+- spl-token transfer --fund-recipient --allow-unfunded-recipient add 1000 phantomWallet
